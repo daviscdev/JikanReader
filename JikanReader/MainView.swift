@@ -9,16 +9,19 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var viewModel = TopRankViewModel()
+    @StateObject var favoriteViewModel = FavoriteViewModel()
     
     var body: some View {
         TabView {
             TopRankView()
                 .environmentObject(viewModel)
+                .environmentObject(favoriteViewModel)
                 .tabItem {
                     Label("Top Rank", systemImage: "list.number")
                 }
 
             FavoriteView()
+                .environmentObject(favoriteViewModel)
                 .tabItem {
                     Label("Favorite", systemImage: "heart")
                 }

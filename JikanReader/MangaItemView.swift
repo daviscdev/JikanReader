@@ -9,10 +9,12 @@ import SwiftUI
 
 struct MangaItemView: View {
     var item: Manga
+    var showRank = true
     var body: some View {
         HStack {
-            Text("\(Int(item.rank!))")
+            Text("\(Int(item.rank ?? 0))")
                 .font(.system(size: 24))
+                .opacity(showRank ? 1.0: 0.0)
             
             let url = URL(string: item.images?["jpg"]?.imageURL ?? "")!
             AsyncImage(
@@ -20,7 +22,7 @@ struct MangaItemView: View {
                 content: { image in
                     image.resizable()
                          .aspectRatio(contentMode: .fit)
-                         .frame(maxWidth: 100, maxHeight: 100)
+                         .frame(maxWidth: 80, maxHeight: 100)
                 },
                 placeholder: {
                     ProgressView()

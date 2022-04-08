@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TopRankView: View {
     @EnvironmentObject private var viewModel: TopRankViewModel
+    @EnvironmentObject private var favoriteViewModel: FavoriteViewModel
     
     var body: some View {
         NavigationView {
@@ -22,16 +23,20 @@ struct TopRankView: View {
                     .pickerStyle(.segmented)
                     .padding(.horizontal)
                     
-                    HStack {
+                    HStack(spacing: 0.0) {
                         Spacer()
+                        
+                        Image(systemName: "line.3.horizontal.decrease.circle")
                         
                         if viewModel.typeSelection == 0 {
                             animeTypePicker
-                                .padding(.horizontal)
+                                .padding(.leading, 8)
+                                .padding(.trailing)
                         }
                         else {
                             mangaTypePicker
-                                .padding(.horizontal)
+                                .padding(.leading, 8)
+                                .padding(.trailing)
                         }
                     }
                     
@@ -92,9 +97,7 @@ struct TopRankView: View {
                 }
                 .swipeActions {
                     Button {
-                        withAnimation {
-                            //viewModel.toggleFavorite(itemID: item.id)
-                        }
+                        favoriteViewModel.favoriteList.append(FavoriteItem(id: item.id, url: item.url, images: item.images, title: item.title, titleEnglish: item.titleEnglish, titleJapanese: item.titleJapanese, metadata: .anime(aired: item.aired!)))
                     } label: {
                         Label {
                             Text("Favorite")
@@ -125,9 +128,7 @@ struct TopRankView: View {
                 }
                 .swipeActions {
                     Button {
-                        withAnimation {
-                            //viewModel.toggleFavorite(itemID: item.id)
-                        }
+                        favoriteViewModel.favoriteList.append(FavoriteItem(id: item.id, url: item.url, images: item.images, title: item.title, titleEnglish: item.titleEnglish, titleJapanese: item.titleJapanese, metadata: .manga(published: item.published!)))
                     } label: {
                         Label {
                             Text("Favorite")
