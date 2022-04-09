@@ -32,10 +32,8 @@ struct MangaItemView: View {
             VStack(alignment: .leading) {
                 Text("\(item.titleJapanese ?? "")")
                     .lineLimit(3)
-                Text("Start:\(item.published?.from ?? "")")
-                    .font(.system(size: 12))
-                Text("End:\(item.published?.to ?? "To be continued")")
-                    .font(.system(size: 12))
+                Text("\(item.published?.from?.dateFormated() ?? "") ~ \(item.published?.to?.dateFormated() ?? "To be continued")")
+                    .font(.system(size: 14))
             }
         }
     }

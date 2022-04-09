@@ -27,6 +27,7 @@
 		35F147AD28012EDF0036A53C /* FavoriteViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F147AC28012EDF0036A53C /* FavoriteViewModelTest.swift */; };
 		35F147AF280171180036A53C /* TopRankViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F147AE280171180036A53C /* TopRankViewModelTest.swift */; };
 		35F147B3280171920036A53C /* MockJikanAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F147B2280171920036A53C /* MockJikanAPIService.swift */; };
+		35F147B52801A3D70036A53C /* DateFormatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F147B42801A3D70036A53C /* DateFormatExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		35F147AC28012EDF0036A53C /* FavoriteViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModelTest.swift; sourceTree = "<group>"; };
 		35F147AE280171180036A53C /* TopRankViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRankViewModelTest.swift; sourceTree = "<group>"; };
 		35F147B2280171920036A53C /* MockJikanAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJikanAPIService.swift; sourceTree = "<group>"; };
+		35F147B42801A3D70036A53C /* DateFormatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 				35F1479827FED5E20036A53C /* MangaItemView.swift */,
 				35F1479427FECA260036A53C /* FavoriteView.swift */,
 				35F1479627FED0AF0036A53C /* WebView.swift */,
+				35F147B42801A3D70036A53C /* DateFormatExtension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				35F1476927FEC8980036A53C /* TopRankView.swift in Sources */,
 				35F1479D27FEE0290036A53C /* TopRankViewModel.swift in Sources */,
 				35F1479327FECA000036A53C /* MainView.swift in Sources */,
+				35F147B52801A3D70036A53C /* DateFormatExtension.swift in Sources */,
 				35F147A327FF14B70036A53C /* MangaModel.swift in Sources */,
 				35F147A628006DBF0036A53C /* FavoriteViewModel.swift in Sources */,
 				35F1479127FEC9130036A53C /* AnimeItemView.swift in Sources */,

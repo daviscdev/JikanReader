@@ -116,7 +116,7 @@ struct TopRankView: View {
                 }
             }
         }
-        .listStyle(PlainListStyle())
+        .listStyle(.plain)
     }
     
     var mangaList: some View {
@@ -149,7 +149,7 @@ struct TopRankView: View {
                 }
             }
         }
-        .listStyle(PlainListStyle())
+        .listStyle(.plain)
     }
 }
 
