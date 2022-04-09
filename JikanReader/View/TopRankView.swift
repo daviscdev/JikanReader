@@ -40,11 +40,11 @@ struct TopRankView: View {
                         }
                     }
                     
-                    if viewModel.typeSelection == 0 {
+                    ZStack {
                         animeList
-                    }
-                    else {
+                            .opacity(viewModel.typeSelection == 0 ? 1.0: 0.0)
                         mangaList
+                            .opacity(viewModel.typeSelection != 0 ? 1.0: 0.0)
                     }
                 }
                 .navigationTitle("Top Ranking")
