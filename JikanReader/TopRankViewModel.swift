@@ -37,7 +37,7 @@ class TopRankViewModel: ObservableObject {
         }
     }
     
-    func selectAnimeType(type: String) {
+    func selectAnimeType(_ type: String) {
         resetLoadedAnimeList()
         
         if type == "All" {
@@ -48,7 +48,7 @@ class TopRankViewModel: ObservableObject {
         }
     }
     
-    func selectMangaType(type: String) {
+    func selectMangaType(_ type: String) {
         resetLoadedMangaList()
         
         if type == "All" {

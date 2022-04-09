@@ -59,6 +59,7 @@ struct TopRankView: View {
                     .opacity(viewModel.isLoading ? 1.0: 0.0)
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
     var animeTypePicker: some View {
@@ -68,7 +69,7 @@ struct TopRankView: View {
             }
         }
         .onChange(of: viewModel.animeTypeSelection) { tag in
-            viewModel.selectAnimeType(type: viewModel.animeType[tag])
+            viewModel.selectAnimeType(viewModel.animeType[tag])
         }
         .pickerStyle(.menu)
     }
@@ -80,7 +81,7 @@ struct TopRankView: View {
             }
         }
         .onChange(of: viewModel.mangaTypeSelection) { tag in
-            viewModel.selectMangaType(type: viewModel.mangaType[tag])
+            viewModel.selectMangaType(viewModel.mangaType[tag])
         }
         .pickerStyle(.menu)
     }
@@ -115,6 +116,7 @@ struct TopRankView: View {
                 }
             }
         }
+        .listStyle(PlainListStyle())
     }
     
     var mangaList: some View {
@@ -147,6 +149,7 @@ struct TopRankView: View {
                 }
             }
         }
+        .listStyle(PlainListStyle())
     }
 }
 
