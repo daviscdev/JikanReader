@@ -117,15 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				35F1476627FEC8980036A53C /* JikanReaderApp.swift */,
-				35F1479227FECA000036A53C /* MainView.swift */,
-				35F1476827FEC8980036A53C /* TopRankView.swift */,
-				35F1479C27FEE0290036A53C /* TopRankViewModel.swift */,
-				35F1479027FEC9130036A53C /* AnimeItemView.swift */,
-				35F1479827FED5E20036A53C /* MangaItemView.swift */,
-				35F1479427FECA260036A53C /* FavoriteView.swift */,
-				35F147A528006DBE0036A53C /* FavoriteViewModel.swift */,
-				35F147A7280129CC0036A53C /* FavoriteItem.swift */,
-				35F1479627FED0AF0036A53C /* WebView.swift */,
+				35F147AB28012E6F0036A53C /* View */,
+				35F147AA28012E4A0036A53C /* ViewModel */,
+				35F147A928012E200036A53C /* Model */,
 				35F147A427FF16B60036A53C /* JikanAPI */,
 				35F1476A27FEC8990036A53C /* Assets.xcassets */,
 				35F1476C27FEC8990036A53C /* Preview Content */,
@@ -162,10 +156,40 @@
 			isa = PBXGroup;
 			children = (
 				35F1479E27FEE8060036A53C /* JikanAPIService.swift */,
+			);
+			path = JikanAPI;
+			sourceTree = "<group>";
+		};
+		35F147A928012E200036A53C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35F147A7280129CC0036A53C /* FavoriteItem.swift */,
 				35F147A027FF0F0F0036A53C /* AnimeModel.swift */,
 				35F147A227FF14B70036A53C /* MangaModel.swift */,
 			);
-			path = JikanAPI;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		35F147AA28012E4A0036A53C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				35F1479C27FEE0290036A53C /* TopRankViewModel.swift */,
+				35F147A528006DBE0036A53C /* FavoriteViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		35F147AB28012E6F0036A53C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35F1479227FECA000036A53C /* MainView.swift */,
+				35F1476827FEC8980036A53C /* TopRankView.swift */,
+				35F1479027FEC9130036A53C /* AnimeItemView.swift */,
+				35F1479827FED5E20036A53C /* MangaItemView.swift */,
+				35F1479427FECA260036A53C /* FavoriteView.swift */,
+				35F1479627FED0AF0036A53C /* WebView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
