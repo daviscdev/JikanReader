@@ -7,29 +7,32 @@
 
 import Foundation
 
-struct FavoriteItem: Identifiable, Equatable {
-    let id: Int?
-    let url: String?
-    let images: [String: CoverImage]?
-    let title, titleEnglish, titleJapanese: String?
-    var metadata: Metadata
-    
-    static func == (lhs: FavoriteItem, rhs: FavoriteItem) -> Bool {
-        lhs.id == rhs.id
+class FavoriteViewModel: ObservableObject {
+    @Published var favoriteList: [FavoriteItem] = [] {
+        didSet {
+            if let encoded = try? JSONEncoder().encode(favoriteList) {
+                UserDefaults.standard.set(encoded, forKey: "favoriteList")
+            }
+        }
     }
-}
 
-extension FavoriteItem {
-    enum Metadata {
-        case anime(aired: Aired)
-        case manga(published: PublishedDate)
-    }
-}
-
-class FavoriteViewModel: ObservableObject {    
-    @Published var favoriteList: [FavoriteItem] = []
-    
     init() {
-        //
+        if let favoriteList = UserDefaults.standard.object(forKey: "favoriteList") as? Data {
+            if let decodedFavoriteList = try? JSONDecoder().decode([FavoriteItem].self, from: favoriteList) {
+                self.favoriteList = decodedFavoriteList
+            }
+        }
+    }
+        
+    func add(_ item: FavoriteItem) {
+        if !favoriteList.contains(item) {
+            favoriteList.append(item)
+        }
+    }
+    
+    func remove(_ item: FavoriteItem) {
+        if let index = favoriteList.firstIndex(of: item) {
+            favoriteList.remove(at: index)
+        }
     }
 }

@@ -97,7 +97,8 @@ struct TopRankView: View {
                 }
                 .swipeActions {
                     Button {
-                        favoriteViewModel.favoriteList.append(FavoriteItem(id: item.id, url: item.url, images: item.images, title: item.title, titleEnglish: item.titleEnglish, titleJapanese: item.titleJapanese, metadata: .anime(aired: item.aired!)))
+                        let favoriteItem = FavoriteItem(id: item.id, url: item.url, images: item.images, title: item.title, titleEnglish: item.titleEnglish, titleJapanese: item.titleJapanese, metadata: .anime(aired: item.aired!))
+                        favoriteViewModel.add(favoriteItem)
                     } label: {
                         Label {
                             Text("Favorite")
@@ -128,7 +129,8 @@ struct TopRankView: View {
                 }
                 .swipeActions {
                     Button {
-                        favoriteViewModel.favoriteList.append(FavoriteItem(id: item.id, url: item.url, images: item.images, title: item.title, titleEnglish: item.titleEnglish, titleJapanese: item.titleJapanese, metadata: .manga(published: item.published!)))
+                        let favoriteItem = FavoriteItem(id: item.id, url: item.url, images: item.images, title: item.title, titleEnglish: item.titleEnglish, titleJapanese: item.titleJapanese, metadata: .manga(published: item.published!))
+                        favoriteViewModel.add(favoriteItem)
                     } label: {
                         Label {
                             Text("Favorite")

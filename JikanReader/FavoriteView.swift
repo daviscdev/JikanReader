@@ -28,9 +28,7 @@ struct FavoriteView: View {
                     }
                     .swipeActions {
                         Button {
-                            if let index = favoriteViewModel.favoriteList.firstIndex(of: item) {
-                                favoriteViewModel.favoriteList.remove(at: index)
-                            }
+                            favoriteViewModel.remove(item)
                         } label: {
                             Label {
                                 Text("Remove")
@@ -43,7 +41,9 @@ struct FavoriteView: View {
                 }
             }
             .navigationTitle("Favorite")
+            .listStyle(PlainListStyle())
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

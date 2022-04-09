@@ -24,6 +24,7 @@
 		35F147A127FF0F0F0036A53C /* AnimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F147A027FF0F0F0036A53C /* AnimeModel.swift */; };
 		35F147A327FF14B70036A53C /* MangaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F147A227FF14B70036A53C /* MangaModel.swift */; };
 		35F147A628006DBF0036A53C /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F147A528006DBE0036A53C /* FavoriteViewModel.swift */; };
+		35F147A8280129CC0036A53C /* FavoriteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F147A7280129CC0036A53C /* FavoriteItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		35F147A027FF0F0F0036A53C /* AnimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeModel.swift; sourceTree = "<group>"; };
 		35F147A227FF14B70036A53C /* MangaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaModel.swift; sourceTree = "<group>"; };
 		35F147A528006DBE0036A53C /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		35F147A7280129CC0036A53C /* FavoriteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				35F1479827FED5E20036A53C /* MangaItemView.swift */,
 				35F1479427FECA260036A53C /* FavoriteView.swift */,
 				35F147A528006DBE0036A53C /* FavoriteViewModel.swift */,
+				35F147A7280129CC0036A53C /* FavoriteItem.swift */,
 				35F1479627FED0AF0036A53C /* WebView.swift */,
 				35F147A427FF16B60036A53C /* JikanAPI */,
 				35F1476A27FEC8990036A53C /* Assets.xcassets */,
@@ -303,6 +306,7 @@
 				35F147A327FF14B70036A53C /* MangaModel.swift in Sources */,
 				35F147A628006DBF0036A53C /* FavoriteViewModel.swift in Sources */,
 				35F1479127FEC9130036A53C /* AnimeItemView.swift in Sources */,
+				35F147A8280129CC0036A53C /* FavoriteItem.swift in Sources */,
 				35F1479F27FEE8060036A53C /* JikanAPIService.swift in Sources */,
 				35F1479727FED0AF0036A53C /* WebView.swift in Sources */,
 				35F1479527FECA260036A53C /* FavoriteView.swift in Sources */,
