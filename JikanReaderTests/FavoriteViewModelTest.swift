@@ -20,7 +20,7 @@ class FavoriteViewModelTest: XCTestCase {
     }
 
     func testAdd() {
-        let favoriteItem = FavoriteItem(id: 123, url: "https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood", images: ["jpg": CoverImage(imageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", smallImageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", largeImageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg")], title: "test", titleEnglish: "test", titleJapanese: "測試", metadata: .anime(aired: Aired(from: "2021", to: "2022", prop: nil)))
+        let favoriteItem = FavoriteItem(id: 123, url: "https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood", images: ["jpg": CoverImage(imageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", smallImageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", largeImageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg")], title: "test", titleEnglish: "test", titleJapanese: "測試", type: nil, metadata: .anime(aired: Aired(from: "2021", to: "2022", prop: nil)))
                 
         let viewModel = FavoriteViewModel()
         viewModel.add(favoriteItem)
@@ -41,7 +41,7 @@ class FavoriteViewModelTest: XCTestCase {
     }
 
     func testAddDuplicate() {
-        let favoriteItem = FavoriteItem(id: 123, url: "https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood", images: ["jpg": CoverImage(imageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", smallImageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", largeImageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg")], title: "test", titleEnglish: "test", titleJapanese: "測試", metadata: .anime(aired: Aired(from: "2021", to: "2022", prop: nil)))
+        let favoriteItem = FavoriteItem(id: 123, url: "https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood", images: ["jpg": CoverImage(imageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", smallImageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", largeImageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg")], title: "test", titleEnglish: "test", titleJapanese: "測試", type: nil, metadata: .anime(aired: Aired(from: "2021", to: "2022", prop: nil)))
                 
         let viewModel = FavoriteViewModel()
         viewModel.add(favoriteItem)
@@ -53,7 +53,7 @@ class FavoriteViewModelTest: XCTestCase {
     }
     
     func testRemove() {
-        let favoriteItem = FavoriteItem(id: 123, url: "https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood", images: ["jpg": CoverImage(imageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", smallImageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", largeImageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg")], title: "test", titleEnglish: "test", titleJapanese: "測試", metadata: .anime(aired: Aired(from: "2021", to: "2022", prop: nil)))
+        let favoriteItem = FavoriteItem(id: 123, url: "https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood", images: ["jpg": CoverImage(imageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", smallImageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg", largeImageURL: "https://cdn.myanimelist.net/images/anime/1223/96541.jpg")], title: "test", titleEnglish: "test", titleJapanese: "測試", type: nil, metadata: .anime(aired: Aired(from: "2021", to: "2022", prop: nil)))
                 
         let viewModel = FavoriteViewModel()
         viewModel.add(favoriteItem)

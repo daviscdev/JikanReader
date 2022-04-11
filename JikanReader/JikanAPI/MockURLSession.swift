@@ -7,7 +7,7 @@
 
 import Foundation
 
-class URLSessionMock: URLSession {
+class MockURLSession: URLSession {
     typealias CompletionHandler = (Data?, URLResponse?, Error?) -> Void
     
     var data: Data?
