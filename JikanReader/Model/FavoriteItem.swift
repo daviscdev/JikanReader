@@ -12,6 +12,7 @@ struct FavoriteItem: Codable, Identifiable, Equatable {
     let url: String?
     let images: [String: CoverImage]?
     let title, titleEnglish, titleJapanese: String?
+    let type: String?
     let metadata: Metadata
     
     enum CodingKeys: String, CodingKey {
@@ -19,6 +20,7 @@ struct FavoriteItem: Codable, Identifiable, Equatable {
         case url, images, title
         case titleEnglish = "title_english"
         case titleJapanese = "title_japanese"
+        case type = "type"
         case metadata
     }
     

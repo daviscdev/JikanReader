@@ -32,6 +32,7 @@ struct AnimeItemView: View {
             VStack(alignment: .leading) {
                 Text("\(item.titleJapanese ?? "")")
                     .lineLimit(3)
+                Text("\(item.type ?? "")")
                 Text("\(item.aired?.from?.dateFormated() ?? "") ~ \(item.aired?.to?.dateFormated() ?? "To be continued")")
                     .font(.system(size: 14))
             }
