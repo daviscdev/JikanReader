@@ -21,6 +21,11 @@ protocol JikanAPIServiceProtocol {
 
 struct JikanAPIService: JikanAPIServiceProtocol {
     private let baseURL = "https://api.jikan.moe/v4"
+    private let urlSession: URLSession
+    
+    init(urlSession: URLSession = .shared) {
+         self.urlSession = urlSession
+     }
     
     private func makeURL(endpoint: String, param: String) -> URL? {
         return URL(string: baseURL + "\(endpoint)?\(param)")
@@ -30,7 +35,7 @@ struct JikanAPIService: JikanAPIServiceProtocol {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         
-        let task = URLSession.shared.dataTask(with: request) { (data, _, error) in
+        let task = urlSession.dataTask(with: request) { (data, _, error) in
             if let error = error {
                 completionHandler(.failure(.networkError(error: error)))
                 return

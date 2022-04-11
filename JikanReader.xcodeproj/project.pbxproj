@@ -28,6 +28,8 @@
 		35F147AF280171180036A53C /* TopRankViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F147AE280171180036A53C /* TopRankViewModelTest.swift */; };
 		35F147B3280171920036A53C /* MockJikanAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F147B2280171920036A53C /* MockJikanAPIService.swift */; };
 		35F147B52801A3D70036A53C /* DateFormatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F147B42801A3D70036A53C /* DateFormatExtension.swift */; };
+		35F147B728046AF50036A53C /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F147B628046AF50036A53C /* MockURLSessionDataTask.swift */; };
+		35F147B928046B170036A53C /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F147B828046B170036A53C /* MockURLSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		35F147AE280171180036A53C /* TopRankViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRankViewModelTest.swift; sourceTree = "<group>"; };
 		35F147B2280171920036A53C /* MockJikanAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJikanAPIService.swift; sourceTree = "<group>"; };
 		35F147B42801A3D70036A53C /* DateFormatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatExtension.swift; sourceTree = "<group>"; };
+		35F147B628046AF50036A53C /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
+		35F147B828046B170036A53C /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,8 @@
 			children = (
 				35F1479E27FEE8060036A53C /* JikanAPIService.swift */,
 				35F147B2280171920036A53C /* MockJikanAPIService.swift */,
+				35F147B628046AF50036A53C /* MockURLSessionDataTask.swift */,
+				35F147B828046B170036A53C /* MockURLSession.swift */,
 			);
 			path = JikanAPI;
 			sourceTree = "<group>";
@@ -335,9 +341,11 @@
 				35F147A127FF0F0F0036A53C /* Anime.swift in Sources */,
 				35F1476927FEC8980036A53C /* TopRankView.swift in Sources */,
 				35F1479D27FEE0290036A53C /* TopRankViewModel.swift in Sources */,
+				35F147B928046B170036A53C /* MockURLSession.swift in Sources */,
 				35F1479327FECA000036A53C /* MainView.swift in Sources */,
 				35F147B52801A3D70036A53C /* DateFormatExtension.swift in Sources */,
 				35F147A327FF14B70036A53C /* Manga.swift in Sources */,
+				35F147B728046AF50036A53C /* MockURLSessionDataTask.swift in Sources */,
 				35F147A628006DBF0036A53C /* FavoriteViewModel.swift in Sources */,
 				35F1479127FEC9130036A53C /* AnimeItemView.swift in Sources */,
 				35F147B3280171920036A53C /* MockJikanAPIService.swift in Sources */,
