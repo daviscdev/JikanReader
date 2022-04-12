@@ -7,11 +7,26 @@
 
 import Foundation
 
-enum JikanAPIServiceError: Error {
+enum JikanAPIServiceError: Error, Equatable {
     case noResponse
     case urlError
     case jsonDecodeError(error: Error)
     case networkError(error: Error)
+    
+    static func == (lhs: JikanAPIServiceError, rhs: JikanAPIServiceError) -> Bool {
+        switch (lhs, rhs) {
+        case (.noResponse, .noResponse):
+            return true
+        case (.urlError, .urlError):
+            return true
+        case (.jsonDecodeError(error: _), .jsonDecodeError(error: _)):
+            return true
+        case (.networkError(error: _), .networkError(error: _)):
+            return true
+        default:
+            return false
+        }
+    }
 }
 
 protocol JikanAPIServiceProtocol {

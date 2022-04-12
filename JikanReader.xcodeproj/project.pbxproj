@@ -30,6 +30,7 @@
 		35F147B52801A3D70036A53C /* DateFormatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F147B42801A3D70036A53C /* DateFormatExtension.swift */; };
 		35F147B728046AF50036A53C /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F147B628046AF50036A53C /* MockURLSessionDataTask.swift */; };
 		35F147B928046B170036A53C /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F147B828046B170036A53C /* MockURLSession.swift */; };
+		35F147BB28046CDC0036A53C /* JikanAPIServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F147BA28046CDC0036A53C /* JikanAPIServiceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		35F147B42801A3D70036A53C /* DateFormatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatExtension.swift; sourceTree = "<group>"; };
 		35F147B628046AF50036A53C /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
 		35F147B828046B170036A53C /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		35F147BA28046CDC0036A53C /* JikanAPIServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JikanAPIServiceTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			children = (
 				35F147AE280171180036A53C /* TopRankViewModelTest.swift */,
 				35F147AC28012EDF0036A53C /* FavoriteViewModelTest.swift */,
+				35F147BA28046CDC0036A53C /* JikanAPIServiceTest.swift */,
 			);
 			path = JikanReaderTests;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F147BB28046CDC0036A53C /* JikanAPIServiceTest.swift in Sources */,
 				35F147AD28012EDF0036A53C /* FavoriteViewModelTest.swift in Sources */,
 				35F147AF280171180036A53C /* TopRankViewModelTest.swift in Sources */,
 			);

@@ -8,9 +8,13 @@
 import Foundation
 
 // MARK: - JikanAPIGetTopAnime
-struct JikanAPIGetTopAnime: Codable {
+struct JikanAPIGetTopAnime: Codable, Equatable {
     let data: [Anime]?
     let pagination: Pagination?
+    
+    static func == (lhs: JikanAPIGetTopAnime, rhs: JikanAPIGetTopAnime) -> Bool {
+        lhs.data == rhs.data
+    }
 }
 
 // MARK: - Manga
